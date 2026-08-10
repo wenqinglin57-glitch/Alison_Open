@@ -1,0 +1,4 @@
+interface:
+  display_name: "真人照片转半身Q版GIF"
+  short_description: "将2–3张真人照片制作成九动作半身透明Q版GIF表情包"
+  default_prompt: "Use $photo-to-chibi-gifs to turn these portrait photos into the default nine-action large half-body transparent chibi GIF pack."

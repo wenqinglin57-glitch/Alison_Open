@@ -1,0 +1,37 @@
+{
+  "age_presentation": {
+    "target": "approximately 25 years old",
+    "adult_face_required": true,
+    "forbidden": ["toddler face", "baby proportions", "excessively shortened midface"]
+  },
+  "face": {
+    "shape": "mature oval face",
+    "jaw": "defined but soft adult jawline",
+    "midface": "normal adult midface length"
+  },
+  "hair": {
+    "color": "black",
+    "length": "long",
+    "must_preserve": ["long black hair", "stable parting and front strands"]
+  },
+  "outfit": {
+    "top": "white printed T-shirt",
+    "outer_layer": "open black sleeveless vest",
+    "palette": ["white", "black"],
+    "construction_details": ["T-shirt print remains stable", "vest stays open", "black watch remains visible"],
+    "forbidden_changes": ["mixing clothes from face-only references", "closing the vest", "changing the T-shirt print", "transparent fabric"]
+  },
+  "permanent_accessories": ["transparent round-frame prescription glasses", "black watch"],
+  "action_only_accessories": {
+    "cool": {
+      "items": ["dark sunglasses"],
+      "replace_permanent_eyewear": true,
+      "never_stack_eyewear": true
+    }
+  },
+  "reference_priority": {
+    "identity": ["explicit user instructions", "primary-face", "hair-profile"],
+    "outfit": ["explicit designated outfit photo", "outfit-primary"],
+    "composition_and_motion": ["matching approved action sample", "framing reference", "action preset text"]
+  }
+}

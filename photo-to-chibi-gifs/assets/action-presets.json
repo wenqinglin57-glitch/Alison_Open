@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "canvas": 240,
+  "frame_count": 5,
+  "max_kb": 500,
+  "framing_defaults": {
+    "mode": "half-body",
+    "target_subject_height_ratio": 0.875,
+    "subject_height_ratio_min": 0.85,
+    "subject_height_ratio_max": 0.90,
+    "top_margin_min_px": 12,
+    "top_margin_max_px": 24,
+    "bottom_margin_target_px": 12,
+    "bottom_margin_tolerance_px": 5,
+    "ordinary_side_margin_min_px": 45,
+    "ordinary_side_margin_target_px": 55,
+    "target_face_height_px": 72,
+    "face_height_warning_ratio": 0.10,
+    "face_height_error_ratio": 0.18,
+    "eye_line_warning_px": 8,
+    "eye_line_error_px": 14,
+    "wide_prop_max_face_shrink_ratio": 0.88,
+    "isolated_component_max_pixels": 8,
+    "chroma_fringe_distance": 50
+  },
+  "default_order": [
+    "eating", "happy", "busy-typing", "angry", "peace", "wave",
+    "crying", "thumbs-up", "embarrassed"
+  ],
+  "quick_test": ["eating", "happy", "busy-typing"],
+  "actions": {
+    "sleep": {
+      "name_zh": "睡觉",
+      "alignment": "center",
+      "durations_ms": [620, 520, 620, 520, 760],
+      "motion": "Side-lying under a blanket; chest and blanket rise and fall gently; a small drool bubble grows and relaxes.",
+      "required": ["side-lying pose", "blanket", "pillow", "small drool"],
+      "forbidden": ["standing sleep", "missing body under blanket", "open eyes"]
+    },
+    "eating": {
+      "name_zh": "吃饭",
+      "alignment": "waist",
+      "durations_ms": [430, 390, 430, 390, 560],
+      "motion": "Hold one rice bowl and use chopsticks; move food from bowl to mouth, chew, and smile.",
+      "required": ["one bowl", "one pair of chopsticks", "visible chewing"],
+      "forbidden": ["extra hair tuft", "extra hand", "floating food utensil"]
+    },
+    "busy-typing": {
+      "name_zh": "忙碌打电脑",
+      "alignment": "waist",
+      "wide_prop": true,
+      "durations_ms": [300, 260, 300, 260, 420],
+      "motion": "Work quickly at one laptop; left and right hands alternate pressing the keyboard, the expression stays focused, and the upper body rises and falls subtly.",
+      "required": ["one laptop below the face", "exactly two hands alternating on the keyboard", "focused expression", "subtle upper-body motion"],
+      "forbidden": ["extra hand", "missing hand", "disconnected arm or palm", "laptop covering the face", "floating keyboard", "face smaller than other actions"]
+    },
+    "reading": {
+      "name_zh": "看书",
+      "alignment": "waist",
+      "durations_ms": [560, 460, 560, 460, 680],
+      "motion": "Read an open book in a large head-to-waist composition; eyes scan the page and exactly one existing hand turns one page.",
+      "required": ["open book below the face", "two hands total", "stable waist crop"],
+      "forbidden": ["extra hand during page turn", "book covering face", "face size drift"]
+    },
+    "cheering": {
+      "name_zh": "加油",
+      "alignment": "bottom",
+      "durations_ms": [390, 350, 390, 350, 520],
+      "motion": "Pump both fists with determined bright eyes; body bounces slightly with energetic spark accents.",
+      "required": ["two clenched fists", "determined smile", "small energy accents"],
+      "forbidden": ["red cloth", "flag", "unidentified red object", "extra arm"]
+    },
+    "shy": {
+      "name_zh": "害羞",
+      "alignment": "bottom",
+      "durations_ms": [500, 460, 500, 460, 620],
+      "motion": "Blush gradually, bring hands close to cheeks, glance aside, then peek back.",
+      "required": ["blushing cheeks", "bashful glance"],
+      "forbidden": ["covered entire face", "extra fingers"]
+    },
+    "surprised": {
+      "name_zh": "惊讶",
+      "alignment": "bottom",
+      "durations_ms": [340, 310, 380, 340, 540],
+      "motion": "Eyes widen, mouth opens, shoulders jump; surprise rays, a small exclamation mark, and motion lines appear.",
+      "required": ["wide eyes", "open mouth", "surprise rays", "exclamation symbol"],
+      "forbidden": ["text words", "cropped surprise elements"]
+    },
+    "cool": {
+      "name_zh": "耍酷",
+      "alignment": "bottom",
+      "durations_ms": [430, 390, 430, 390, 580],
+      "motion": "Put on dark sunglasses, tilt the head, adjust the glasses once, and finish with a confident smirk.",
+      "required": ["dark sunglasses", "confident pose", "smirk"],
+      "forbidden": ["sunglasses in other actions", "duplicate glasses", "thumbs-up replacing cool pose"]
+    },
+    "peace": {
+      "name_zh": "比耶",
+      "alignment": "waist",
+      "durations_ms": [420, 370, 420, 370, 560],
+      "motion": "Raise one hand into a V sign, wink, and make a small cheerful bounce.",
+      "required": ["clear V sign", "wink"],
+      "forbidden": ["wrong finger count", "thumbs-up"]
+    },
+    "wave": {
+      "name_zh": "打招呼",
+      "alignment": "waist",
+      "durations_ms": [380, 330, 380, 330, 540],
+      "motion": "Smile and wave one open hand left-right while the other arm stays natural.",
+      "required": ["open waving hand", "friendly smile"],
+      "forbidden": ["goodbye sadness", "extra arm"]
+    },
+    "hmph": {
+      "name_zh": "哼",
+      "alignment": "bottom",
+      "durations_ms": [480, 430, 480, 430, 620],
+      "motion": "Cross arms, puff cheeks, turn the face away, and release one small huff cloud.",
+      "required": ["crossed arms", "puffed cheeks", "small huff cloud"],
+      "forbidden": ["full anger explosion", "missing forearm"]
+    },
+    "angry": {
+      "name_zh": "生气",
+      "alignment": "waist",
+      "durations_ms": [360, 330, 360, 330, 520],
+      "motion": "Brows lower, cheeks redden, fists clench, and steam puffs appear on both sides.",
+      "required": ["angry brows", "clenched fists", "steam puffs"],
+      "forbidden": ["hat icon or logo", "weapon", "cropped steam"]
+    },
+    "crying": {
+      "name_zh": "哭",
+      "alignment": "waist",
+      "durations_ms": [430, 390, 430, 390, 600],
+      "motion": "Face crumples, tears well up, then two clear tear streams fall while shoulders tremble.",
+      "required": ["visible tear streams", "trembling shoulders"],
+      "forbidden": ["tears obscuring the face or clothing", "extra eyes"]
+    },
+    "faint": {
+      "name_zh": "吓晕",
+      "alignment": "waist",
+      "durations_ms": [300, 280, 350, 480, 720],
+      "motion": "Recoil in fear, eyes spiral, and let the upper body slump sideways within a stable head-to-waist composition, ending with a tiny floating spirit effect.",
+      "required": ["clear recoil and slump", "complete visible arms and hands", "spiral eyes"],
+      "forbidden": ["instant pose jump", "detached arm or hand", "waist-anchor drift"]
+    },
+    "love": {
+      "name_zh": "喜欢",
+      "alignment": "bottom",
+      "durations_ms": [440, 390, 440, 390, 580],
+      "motion": "Eyes become heart-shaped, hug one large heart, and let two small hearts float upward.",
+      "required": ["large heart", "small floating hearts", "warm smile"],
+      "forbidden": ["text", "heart hiding face"]
+    },
+    "afraid": {
+      "name_zh": "怕怕",
+      "alignment": "bottom",
+      "durations_ms": [360, 320, 360, 320, 540],
+      "motion": "Tremble with raised shoulders, clasp hands near chest, glance around, and show small shake lines.",
+      "required": ["trembling body", "worried eyes", "shake lines"],
+      "forbidden": ["crying tears replacing fear", "missing hands"]
+    },
+    "sleepy": {
+      "name_zh": "困了",
+      "alignment": "bottom",
+      "durations_ms": [620, 540, 620, 540, 760],
+      "motion": "Eyelids droop, yawn behind one hand, sway gently, and show a small floating sleep bubble.",
+      "required": ["yawn", "drooping eyelids", "sleep bubble"],
+      "forbidden": ["lying asleep", "missing yawning hand"]
+    },
+    "embarrassed": {
+      "name_zh": "尴尬",
+      "alignment": "waist",
+      "durations_ms": [500, 450, 500, 450, 620],
+      "motion": "Give a stiff smile, scratch the head with one complete hand, and show one sweat drop.",
+      "required": ["awkward smile", "complete scratching hand", "sweat drop"],
+      "forbidden": ["missing hand", "extra arm", "hat icon"]
+    },
+    "goodbye": {
+      "name_zh": "拜拜",
+      "alignment": "bottom",
+      "durations_ms": [430, 380, 430, 380, 620],
+      "motion": "Wave gently, lean back a little, and finish with a warm closing smile.",
+      "required": ["gentle wave", "warm farewell expression"],
+      "forbidden": ["running away", "sad luggage"]
+    },
+    "confused": {
+      "name_zh": "疑惑",
+      "alignment": "bottom",
+      "durations_ms": [520, 460, 520, 460, 640],
+      "motion": "Tilt the head left and right, raise one eyebrow, and let one question mark appear.",
+      "required": ["head tilt", "one question mark", "raised eyebrow"],
+      "forbidden": ["text words", "multiple oversized symbols"]
+    },
+    "thumbs-up": {
+      "name_zh": "点赞",
+      "alignment": "waist",
+      "durations_ms": [420, 370, 420, 370, 560],
+      "motion": "Raise one clear thumbs-up toward the viewer, smile, and give a tiny approving nod.",
+      "required": ["one clear thumbs-up", "approving smile"],
+      "forbidden": ["letter or envelope", "extra thumb", "OK hand sign"]
+    },
+    "thinking": {
+      "name_zh": "思考",
+      "alignment": "bottom",
+      "durations_ms": [560, 500, 560, 500, 680],
+      "motion": "Rest one hand on the chin, look upward, blink, and let a small thought bubble form.",
+      "required": ["hand on chin", "upward gaze", "thought bubble"],
+      "forbidden": ["answer text", "missing chin hand"]
+    },
+    "shake-head": {
+      "name_zh": "摇头",
+      "alignment": "bottom",
+      "durations_ms": [360, 320, 360, 320, 500],
+      "motion": "Keep the torso anchored while the head clearly rotates left, right, left, right, and returns center; hair follows with slight lag.",
+      "required": ["clear left-right head motion", "stable torso", "hair follow-through"],
+      "forbidden": ["whole character sliding", "motion blur hiding face"]
+    },
+    "happy": {
+      "name_zh": "开心",
+      "alignment": "waist",
+      "durations_ms": [390, 350, 390, 350, 560],
+      "motion": "Open both arms, close eyes in a broad smile, and bounce once with small sparkle accents.",
+      "required": ["broad smile", "open arms", "sparkles"],
+      "forbidden": ["cropped hands", "extra arms"]
+    },
+    "annoyed": {
+      "name_zh": "烦",
+      "alignment": "bottom",
+      "durations_ms": [500, 450, 500, 450, 650],
+      "motion": "Slump slightly, press both cheeks with complete hands, show tired half-lidded eyes, and release a small gray sigh cloud.",
+      "required": ["half-lidded eyes", "both complete hands", "small sigh cloud"],
+      "forbidden": ["hat icon or logo", "text", "missing hand"]
+    }
+  }
+}

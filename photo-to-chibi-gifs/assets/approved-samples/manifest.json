@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "reference_priority": [
+    "current user photos and identity lock control identity, face, hair, eyewear, and outfit",
+    "approved sample controls drawing style, half-body scale, subject size, composition, and motion rhythm",
+    "action preset text supplies remaining action details"
+  ],
+  "identity_transfer_from_samples": "forbidden",
+  "framing_reference": {
+    "path": "framing-reference.png",
+    "source_gif": "framing-reference.gif",
+    "use_only_for": ["subject height", "head-to-waist crop", "top margin", "waist anchor"],
+    "forbidden_transfer": ["red-panda hat", "identity", "face", "hair", "outfit", "accessories"]
+  },
+  "actions": {
+    "eating": {"path": "eating/strip.png", "source_batch": "style-size-batch-7-v2"},
+    "happy": {"path": "happy/strip.png", "source_batch": "style-size-batch-7-v3"},
+    "busy-typing": {"path": "busy-typing/strip.png", "source_batch": "style-size-batch-7-v3"},
+    "angry": {"path": "angry/strip.png", "source_batch": "style-size-batch-7-v2"},
+    "peace": {"path": "peace/strip.png", "source_batch": "style-size-batch-7-v2"},
+    "wave": {"path": "wave/strip.png", "source_batch": "style-size-batch-7-v2"},
+    "crying": {"path": "crying/strip.png", "source_batch": "style-size-batch-7-v2"},
+    "thumbs-up": {"path": "thumbs-up/strip.png", "source_batch": "style-size-batch-7-v3"},
+    "embarrassed": {"path": "embarrassed/strip.png", "source_batch": "style-size-batch-7-v3"}
+  }
+}

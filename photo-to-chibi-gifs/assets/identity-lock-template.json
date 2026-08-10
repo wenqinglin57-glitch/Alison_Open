@@ -1,0 +1,88 @@
+{
+  "status": "draft",
+  "character_name": "",
+  "age_presentation": {
+    "target": "Infer from user instructions and the primary face reference.",
+    "adult_face_required": false,
+    "forbidden": []
+  },
+  "reference_roles": [],
+  "reference_priority": {
+    "identity": ["explicit user instructions", "primary-face", "hair-profile"],
+    "outfit": ["explicit user instructions", "outfit-primary"],
+    "composition_and_motion": ["matching approved action sample", "framing reference", "action preset text"]
+  },
+  "face": {
+    "shape": "",
+    "jaw": "",
+    "midface": "",
+    "eyes": "",
+    "eyebrows": "",
+    "nose": "",
+    "mouth": "",
+    "distinctive_features": []
+  },
+  "hair": {
+    "color": "",
+    "length": "",
+    "parting": "",
+    "shape": "",
+    "must_preserve": []
+  },
+  "outfit": {
+    "primary_reference": "",
+    "top": "",
+    "outer_layer": "",
+    "visible_waist_detail": "",
+    "palette": [],
+    "print_or_logo": "",
+    "construction_details": [],
+    "forbidden_changes": ["mixing clothes from face-only references", "transparent or see-through fabric"]
+  },
+  "framing": "large half-body portrait from hair or headwear top to a natural waist cutoff",
+  "target_subject_height_ratio": {
+    "min": 0.85,
+    "max": 0.90,
+    "target": 0.875
+  },
+  "waist_anchor": {
+    "bottom_margin_px": 12,
+    "rule": "Keep the visible waist line at a stable bottom anchor; a natural waist cutoff is correct."
+  },
+  "permanent_accessories": [],
+  "action_only_accessories": {
+    "cool": {
+      "items": ["dark sunglasses"],
+      "replace_permanent_eyewear": true,
+      "never_stack_eyewear": true
+    }
+  },
+  "accessory_rules": {
+    "never_inherit_from_identity_only_photos": [],
+    "do_not_copy_from_approved_samples": true
+  },
+  "proportions": {
+    "face_size_rule": "Keep face height stable across all frames and actions.",
+    "eye_line_rule": "Keep eye height stable across all frames and actions.",
+    "upper_body_rule": "Keep head, shoulders, visible arms, hands, and waist proportion consistent."
+  },
+  "style": {
+    "rendering": "clean chibi sticker, rounded dark outline, flat cel shading",
+    "expression_strength": "clear and lively",
+    "no_text": true,
+    "no_watermark": true
+  },
+  "chroma_key": "#FF00FF",
+  "forbidden_drift": [
+    "age presentation drift",
+    "toddler-like face for an adult subject",
+    "face shape, jaw, or midface drift",
+    "hair length or parting drift",
+    "eyewear drift or stacked glasses",
+    "outfit color, print, or construction drift",
+    "transparent or see-through clothing",
+    "face size, eye-line, or waist-anchor drift",
+    "extra or missing hands or disconnected arms",
+    "unrequested headwear, logos, glasses, or jewelry"
+  ]
+}
