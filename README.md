@@ -1,4 +1,4 @@
-# Photo to Chibi GIFs
+<img width="240" height="240" alt="07-busy-typing" src="https://github.com/user-attachments/assets/d7ac9189-4c70-45db-a8a5-d61631d774cc" /># Photo to Chibi GIFs
 
 一个供 Codex 使用的 Skill：根据 2–3 张真人照片生成身份一致、透明背景的 Q 版动态表情包。
 
@@ -41,7 +41,6 @@
 
 ```text
 请使用 $photo-to-chibi-gifs，根据我上传的三张照片生成默认九动作透明 GIF 表情包。
-服装以第二张照片为准，保留透明圆框眼镜。
 ```
 
 ## 目录说明
@@ -64,3 +63,9 @@
 ## 说明
 
 仓库包含用于构图和动作一致性参考的图片样本，以及 LanKu 的可选身份预设。公开使用或再分发前，请确认你拥有相关人物照片、肖像和样本素材的授权。
+
+## 实例
+
+<img width="240" height="240" alt="01-cool" src="https://github.com/user-attachments/assets/0db9f4cd-1b46-4d7d-b267-f83ec472ad51" />
+<img width="240" height="240" alt="07-busy-typing" src="https://github.com/user-attachments/assets/9bdf8bf7-ad18-4575-a7b2-7de7480793f5" />
+<img width="240" height="240" alt="red-panda-hat-240-transparent" src="https://github.com/user-attachments/assets/0f108fe5-f8e0-4320-a0f2-9e37fad3b31e" />
