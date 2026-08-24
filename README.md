@@ -1,4 +1,3 @@
-<img width="240" height="240" alt="07-busy-typing" src="https://github.com/user-attachments/assets/d7ac9189-4c70-45db-a8a5-d61631d774cc" /># Photo to Chibi GIFs
 
 一个供 Codex 使用的 Skill：根据 2–3 张真人照片生成身份一致、透明背景的 Q 版动态表情包。
 
